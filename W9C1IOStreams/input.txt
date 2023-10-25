@@ -1,0 +1,6 @@
+Task:
+Read the content of an input text file named "input.txt."
+Transform the text in the following way:
+Convert all text to uppercase.
+Replace all occurrences of "JAVA" with "Python."
+Write the transformed text to an output text file named "output.txt.”
