@@ -24,5 +24,6 @@ public class Main {
 
         Set<Employee> employeesSet = employee.getSetEmployees();
         System.out.println(employee.countingEmployees());
+        
     }
 }
