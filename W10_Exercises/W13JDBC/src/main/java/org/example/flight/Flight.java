@@ -1,12 +1,16 @@
 package org.example.flight;
 
-import java.sql.Timestamp;
-
 public class Flight {
     private int FlightID;
     private String Airline;
+    private String Destination;
+    private String DepartureTime;
+    private String ArrivalTime;
+    private double Price;
+    private int SeatsAvailable;
+    private String Origin;
 
-    public Flight(int flightID, String airline, String origin, String destination, Timestamp departureTime, Timestamp arrivalTime, double price, int seatsAvailable) {
+    public Flight(int flightID, String airline, String origin, String destination, String departureTime, String arrivalTime, double price, int seatsAvailable) {
         FlightID = flightID;
         Airline = airline;
         Origin = origin;
@@ -17,7 +21,6 @@ public class Flight {
         SeatsAvailable = seatsAvailable;
     }
 
-    private String Origin;
 
     public int getFlightID() {
         return FlightID;
@@ -51,19 +54,19 @@ public class Flight {
         Destination = destination;
     }
 
-    public Timestamp getDepartureTime() {
+    public String getDepartureTime() {
         return DepartureTime;
     }
 
-    public void setDepartureTime(Timestamp departureTime) {
+    public void setDepartureTime(String departureTime) {
         DepartureTime = departureTime;
     }
 
-    public Timestamp getArrivalTime() {
+    public String getArrivalTime() {
         return ArrivalTime;
     }
 
-    public void setArrivalTime(Timestamp arrivalTime) {
+    public void setArrivalTime(String arrivalTime) {
         ArrivalTime = arrivalTime;
     }
 
@@ -83,9 +86,5 @@ public class Flight {
         SeatsAvailable = seatsAvailable;
     }
 
-    private String Destination;
-private Timestamp DepartureTime;
-private Timestamp ArrivalTime;
-private double Price;
-private int SeatsAvailable;
+
 }
